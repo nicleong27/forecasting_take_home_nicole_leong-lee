@@ -13,8 +13,7 @@ def make_base_model(train, test):
     Returns: 
     --------
     prophet : fbprophet model
-    forecast : dataframe
-    test_forecast : dataframe
+    test_forecast : pandas dataframe
     '''
 
     prophet = Prophet()
@@ -36,8 +35,7 @@ def make_model_wth_regressors(train, test):
     Returns: 
     --------
     prophet : fbprophet model
-    forecast : dataframe
-    test_forecast : dataframe
+    test_forecast : pandas dataframe
     '''
 
     prophet = Prophet(yearly_seasonality=False)

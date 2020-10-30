@@ -13,9 +13,10 @@ def plot_line(x, y, title, xlabel, ylabel, ax):
     ----------
     x : pandas series
     y : pandas series
-    title: string
-    xlabel: string
-    ylabel: string
+    title : string
+    xlabel : string
+    ylabel : string
+    ax : axes
 
     Returns: 
     --------
@@ -37,11 +38,11 @@ def plot_mult_lines_groupby(groups, title, xlabel, ylabel, ax):
 
     Parameters
     ----------
-    x : pandas series
-    y : pandas series
-    title: string
-    xlabel: string
-    ylabel: string
+    groups : pandas groupby object
+    title : string
+    xlabel : string
+    ylabel : string
+    ax : axes
 
     Returns: 
     --------
@@ -75,6 +76,7 @@ def compare_test_forecast(test_x, test_y, forecast_x, forecast_y, title, ax):
     forecast_x : pandas series
     forecast_y : pandas series
     title : string
+    ax : axes
 
     Returns: 
     --------
